@@ -1,0 +1,629 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    height: 10%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+::selection {
+    background-color: #121212;
+    color: #fff
+}
+
+.navbar{
+    background: #164303;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: 2px solid #fff;
+}
+
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar_logo{
+    background-color: white;
+    background-image: linear-gradient(to top, rgb(8, 203, 243) 0%, rgb(255, 255, 255) 70%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+.navbear_item{
+    height: 80px;
+}
+
+.navbar_links{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    font-size: 1rem;
+    width: 120px;
+}
+
+.navbar_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: rgb(1, 96, 15);
+    color: #fff;
+}
+
+.button:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(1, 96, 15);
+    transition: all 0.3s ease;
+}
+
+.navbar_links:hover{
+    color: rgb(53, 217, 171);
+    transition: all 0.3s ease;
+}
+
+/*Hero Section CSS*/
+.main{
+    background-color:#164303;
+}
+
+.main_container{
+    background-image: url("Images/Alx\ expectations.png");
+    background-size: cover;
+    background-blend-mode: overlay;
+    min-height: 510px;
+    max-height: 510px;
+    background-color: #313332;
+    width: 100%;
+    max-width: 100%;
+    padding: 120px 0 100px;
+}
+
+.main_content {
+    text-align: center;
+}
+
+.main_content h2 {
+    font-size: 5rem;
+    color: rgb(255, 255, 255); 
+    font-weight:600;
+}
+
+.main_content h3 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255); 
+}
+
+.main_content p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.main_btn {
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 105px;
+    box-shadow: rgb(1, 96, 15) 3px 3px;
+    color: rgb(1, 96, 15);
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main_btn a {
+    position: absolute;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.main_btn:hover {
+    background-color: rgb(1, 96, 15);
+    transition: all 0.5s;
+    color: #fff;
+    border-radius: 105px;
+    box-shadow: rgb(255, 255, 255) -3px 3px;
+}
+
+.about{
+    background-color:#5d7552;}
+
+.about_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    background-color:#ffffff;
+    z-index: 1;
+    width: 100%;
+    padding: 30px 50px 0;
+    max-width: 100%;
+}
+
+.about_content {
+    text-align: justify;
+}
+
+.about_content h2 {
+    font-size: 3rem;
+    color: #164303; 
+}
+
+.about_content p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+    color: #000000;
+}
+
+.about_btn {
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: rgb(1, 96, 15);
+    padding: 12px 32px;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff ;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+
+.about_btn:hover {
+    background: #ffffff;
+    transition: all 0.3s;
+    color: rgb(1, 96, 15);
+    border-radius: 15px;
+    outline: 2px solid rgb(1, 96, 15);
+}
+
+.about_img_container {
+    text-align: center;
+}
+
+#about-img {
+    border-radius: 10px;
+    height: 80%;
+    width: 80%;
+}
+
+#about-img-two {
+    border-radius: 10px;
+    height: 80%;
+    width: 80%;
+}
+
+.second_container{
+    background-image: url("Images/Alx\ expectations.png");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    min-height: 300px;
+    background-color: #313332;
+    width: 100%;
+    max-width: 100%;
+    padding: 120px 0 100px;
+    }
+    
+    .second_content {
+    text-align: center;
+    vertical-align: middle;
+    }
+    
+    .second_content h2 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255); 
+    }
+    
+    .second_content p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    }
+
+.contact{
+    background-color: #ffffff;
+    border: 2px solid rgb(1, 96, 15);
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+}
+
+.contact h1{
+    color: rgb(1, 96, 15);
+    text-align: center;
+    padding: 5px 0;
+    font-size: 300%;
+}
+
+.contact p{
+    color: rgb(1, 96, 15);
+    text-align: center;
+    padding: 5px 0;
+}
+
+#contact-img{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    margin-top: 90px;
+    border: 2px solid black;
+}
+
+.contact_container{
+    display: flex;
+    padding: 30px 0;
+}
+
+.contact_form form{
+    background-color: rgb(1, 96, 15);
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 430px;    
+}
+.contact_form input{
+    display: block;
+    width: 400px;
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    border: none;
+    padding: 7px 15px;
+    margin: 7px 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(1, 96, 15);
+}
+
+.contact_form input, textarea:focus{
+    outline: none;
+}
+
+.contact_form textarea{
+    display: block;
+    min-width: 100%;
+    min-height: 120px;
+    max-width: 100%;
+    max-height: 120px;
+    border-radius: 20px;
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    border: none;
+    padding: 7px 15px;
+    margin: 7px 0;
+}
+
+.contact_form label{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 0px 0 0px 10px;
+}
+
+#submit {
+    background-color: #fff;
+    width: 400px;
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    border: none;
+    padding: 7px 15px;
+    margin: 7px 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(1, 96, 15);   
+}
+
+#submit:hover{
+    background-color: #064f27;
+    color: #fff;
+}
+
+
+/*TEAM CSS*/
+.team {
+    width: 100%;
+    background-color: #deefe6;
+    margin: 50px 0;    
+}
+
+.team_container {
+    padding: 20px;
+}
+
+.team_content h1{
+    color: rgb(1, 96, 15);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.team_content p{
+    text-align: center;
+    margin: 0px auto 10PX;
+    color: #000000;
+    width: 70%;
+}
+
+.team_body{
+    display: flex;
+    vertical-align: middle;
+}
+
+.team_body button {
+    background-color: #fff;
+    color: rgb(1, 96, 15);
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 100%;
+    border: 2px solid rgb(1, 96, 15);
+    vertical-align: middle;
+}
+
+.team_body button:hover {
+    background-color: rgb(1, 96, 15);
+    color: white;
+    font-size: 33px;
+    transition: 0.2s ease-in;
+}
+.team_members {
+    display:flex;   
+    padding: 10px;
+    overflow-x: scroll;
+    margin: 10px auto;
+}
+
+.members {
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid rgb(1, 96, 15);
+    border-radius: 10px;
+    margin: 10px 25px;
+    width: 400px;
+}
+
+.members img {
+    vertical-align: middle;
+    width: 230px;
+    height: 250px;
+    border-radius: 100%;
+    border: 2px solid rgb(1, 96, 15);
+}
+
+.members h1 {
+    font-size: 1.5rem;
+}
+
+.members h2 {
+    color: rgb(35, 162, 54);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.members p {
+    width: 100%;
+    color: #000000;
+}
+
+
+
+.footer{
+    background: #164303;
+    height: 360px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px 20px 50px;
+}
+
+.footer_main {
+    display: flex;
+}
+
+.footer_content {
+    padding: 0 10px;
+    margin: 10px 0 20px;
+    vertical-align: middle;
+}
+
+.footer_nav h3{
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer_nav a{
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#footer_logo{
+    position: relative;
+    top: 20px;
+    left: 60px;
+    bottom: 40px;
+    margin: 20px auto;
+    background-color: white;
+    background-image: linear-gradient(to top, rgb(8, 203, 243) 0%, rgb(255, 255, 255) 70%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+.footer_bottom {
+    max-height: 30px;
+    height: 100%;
+}
+
+.footer_bottom p {
+    padding: 10px 0;
+    vertical-align: middle;
+    background-color: rgba(1, 96, 15, 0.1);
+    text-align: center;
+    color: rgb(1, 96, 15);
+}
+
+.subscription_container {
+    max-height: 80vh;
+    padding: 20px;
+    width: 100%;
+    margin: -20px auto 0;
+    border-radius: 20px;
+    border: 2px solid rgb(1, 96, 15);    
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.subscription_form input{
+    display: block;
+    width: 100%;
+    max-height: 25px;
+    border: none;
+    border-radius: 1px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px 0;
+    background-color: rgba(1, 96, 15, 0.1);
+}
+
+.subscription_form input:focus {
+    outline: none;
+}
+
+.subscription_form label {
+    color: rgb(1, 96, 15);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.subscription_form h3 {
+    color: rgb(1, 96, 15);
+    font-size: 20px;
+}
+
+.subscription_form P {
+    color: rgb(1, 96, 15);
+    font-size: 15px;
+}
+
+.subscription_form button {
+    width: 100%;
+    max-height: 40px;
+    font-size: 1rem;
+    padding: 7px 0;
+    font-weight: 800;
+    border: 1px solid rgb(1, 96, 15);
+    border-radius: 105px;
+    color: rgb(1, 96, 15);
+    cursor: pointer;
+    transition: all 0.35s;
+    outline: none;
+}
+    
+.subscription_form button:hover {
+    background-color: rgb(1, 96, 15);
+    transition: linear 0.2s;
+    border: none;
+    border: 1px solid rgb(1, 96, 15);
+    color: #fff;
+    border-radius: 105px;
+}
+
+.social_container {
+    display: grid;
+    grid-template-columns: 0.7fr 0.7fr 0.7fr;
+}
+
+.social_container img {
+    margin: 10px 0 0 0;
+    padding: 3px;
+    border-radius: 100px;
+}

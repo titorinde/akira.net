@@ -1,0 +1,122 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+::selection {
+    background-color: #121212;
+    color: #fff;
+    display: none;
+}
+
+.head h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+}
+
+.head a {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 20px;
+}
+
+#navbar_logo {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+}
+
+.sign_up {
+    background-image: url('Images/Alx\ expectations.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    height: 100vh;
+    padding: 20px;
+}
+
+        .sign_up_container {
+            max-height: 80vh;
+            padding: 20px;
+            width: 400px;
+            margin: 70px auto;
+            border-radius: 20px;
+            border: 2px solid rgb(1, 96, 15);    
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+.sign_up_container form {
+    max-height: 80vh;
+
+}
+
+.sign_up h1 {
+    color: rgb(1, 96, 15);
+    text-align: center;
+    margin: 0 0 20px;
+    text-decoration: underline;
+}
+
+.sign_up p {
+    color: rgb(1, 96, 15);
+    margin: 20px auto;
+    font-size: 15px;
+    text-align: center;
+}
+
+.sign_up a{
+    color: rgb(73, 73, 74);
+    margin: 20px auto;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.user_form input, select{
+    display: block;
+    width: 100%;
+    max-height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 15px;
+    margin: 10px auto;
+    background-color: rgba(1, 96, 15, 0.1);
+}
+
+.user_form input, select:focus {
+    outline: none;
+}
+
+.user_form label {
+    color: rgb(1, 96, 15);
+    font-size: 18px;
+}
+
+button {
+    width: 100%;
+    max-height: 40px;
+    font-size: 1rem;
+    padding: 7px 0;
+    font-weight: 800;
+    border: 1px solid rgb(1, 96, 15);
+    border-radius: 105px;
+    color: rgb(1, 96, 15);
+    cursor: pointer;
+    transition: all 0.35s;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(1, 96, 15);
+    transition: linear 0.2s;
+    border: none;
+    border: 1px solid rgb(1, 96, 15);
+    color: #fff;
+    border-radius: 105px;
+}
